@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presencia Comercial - Metros y Ferrocarriles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .slide {
+            background: white;
+            width: 1120px;
+            height: 630px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            border-bottom: 3px solid #003366;
+            padding-bottom: 15px;
+            margin-bottom: 35px;
+        }
+        .header h1 {
+            font-size: 26px;
+            color: #003366;
+            margin: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            flex-grow: 1;
+        }
+        .card {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 11px;
+            color: white;
+        }
+        .name { font-size: 14px; font-weight: bold; color: #222; }
+        .loc { font-size: 11px; color: #666; margin-top: 4px; text-transform: uppercase; }
+        
+        /* Colores identificativos de las TA */
+        .tl { background: #005B94; }
+        .stm { background: #009EE0; }
+        .ets { background: #E31837; }
+        .mx { background: #00853F; }
+        .la { background: #FFC72C; color: black; }
+        .path { background: #231F20; }
+        .wmata { background: #124191; }
+        .mn { background: #0039A6; }
+    </style>
+</head>
+<body>
+
+<div class="slide">
+    <div class="header">
+        <h1>Presencia Comercial: Proyectos de Metros y Ferrocarriles en Norteamérica</h1>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="logo tl">TransLink</div>
+            <div class="name">TransLink</div>
+            <div class="loc">Vancouver</div>
+        </div>
+        <div class="card">
+            <div class="logo stm">STM</div>
+            <div class="name">STM</div>
+            <div class="loc">Montreal</div>
+        </div>
+        <div class="card">
+            <div class="logo ets">ETS</div>
+            <div class="name">ETS (Edmonton Transit)</div>
+            <div class="loc">Edmonton</div>
+        </div>
+        <div class="card">
+            <div class="logo mx">Metrolinx</div>
+            <div class="name">Metrolinx</div>
+            <div class="loc">Toronto</div>
+        </div>
+        <div class="card">
+            <div class="logo la">Metro</div>
+            <div class="name">LACMTA</div>
+            <div class="loc">Los Ángeles</div>
+        </div>
+        <div class="card">
+            <div class="logo path">PATH</div>
+            <div class="name">PATH</div>
+            <div class="loc">NY / NJ</div>
+        </div>
+        <div class="card">
+            <div class="logo wmata">M</div>
+            <div class="name">WMATA</div>
+            <div class="loc">Washington D.C.</div>
+        </div>
+        <div class="card">
+            <div class="logo mn">MTA MN</div>
+            <div class="name">Metro-North Railroad</div>
+            <div class="loc">Nueva York</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
