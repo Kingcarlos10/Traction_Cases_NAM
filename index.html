@@ -5,7 +5,7 @@
     <title>Presencia Comercial - Metros y Ferrocarriles</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             background-color: #f4f6f9;
             margin: 0;
             padding: 40px;
@@ -39,40 +39,32 @@
             flex-grow: 1;
         }
         .card {
-            background: #fafafa;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 15px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
-        .logo {
-            width: 65px;
+        .logo-container {
+            width: 120px;
             height: 65px;
-            border-radius: 50%;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            font-size: 11px;
-            color: white;
+        }
+        .logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         .name { font-size: 14px; font-weight: bold; color: #222; }
-        .loc { font-size: 11px; color: #666; margin-top: 4px; text-transform: uppercase; }
-        
-        /* Colores identificativos de las TA */
-        .tl { background: #005B94; }
-        .stm { background: #009EE0; }
-        .ets { background: #E31837; }
-        .mx { background: #00853F; }
-        .la { background: #FFC72C; color: black; }
-        .path { background: #231F20; }
-        .wmata { background: #124191; }
-        .mn { background: #0039A6; }
+        .loc { font-size: 11px; color: #666; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
     </style>
 </head>
 <body>
@@ -83,43 +75,74 @@
     </div>
 
     <div class="grid">
+        <!-- TransLink -->
         <div class="card">
-            <div class="logo tl">TransLink</div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/TransLink_logo.svg/512px-TransLink_logo.svg.png" alt="TransLink">
+            </div>
             <div class="name">TransLink</div>
             <div class="loc">Vancouver</div>
         </div>
+
+        <!-- STM -->
         <div class="card">
-            <div class="logo stm">STM</div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Soci%C3%A9t%C3%A9_de_transport_de_Montr%C3%A9al_logo.svg/512px-Soci%C3%A9t%C3%A9_de_transport_de_Montr%C3%A9al_logo.svg.png" alt="STM">
+            </div>
             <div class="name">STM</div>
             <div class="loc">Montreal</div>
         </div>
+
+        <!-- ETS -->
         <div class="card">
-            <div class="logo ets">ETS</div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Edmonton_Transit_Service_logo.svg/512px-Edmonton_Transit_Service_logo.svg.png" alt="ETS">
+            </div>
             <div class="name">ETS (Edmonton Transit)</div>
             <div class="loc">Edmonton</div>
         </div>
+
+        <!-- Metrolinx -->
         <div class="card">
-            <div class="logo mx">Metrolinx</div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Metrolinx_logo.svg/512px-Metrolinx_logo.svg.png" alt="Metrolinx">
+            </div>
             <div class="name">Metrolinx</div>
             <div class="loc">Toronto</div>
         </div>
+
+        <!-- LACMTA (LA Metro) -->
         <div class="card">
-            <div class="logo la">Metro</div>
-            <div class="name">LACMTA</div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/LACMTA_Metro_logo.svg/512px-LACMTA_Metro_logo.svg.png" alt="LACMTA">
+            </div>
+            <div class="name">LACMTA (Metro)</div>
             <div class="loc">Los Ángeles</div>
         </div>
+
+        <!-- PATH -->
         <div class="card">
-            <div class="logo path">PATH</div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Port_Authority_Trans-Hudson_logo.svg/512px-Port_Authority_Trans-Hudson_logo.svg.png" alt="PATH">
+            </div>
             <div class="name">PATH</div>
             <div class="loc">NY / NJ</div>
         </div>
+
+        <!-- WMATA -->
         <div class="card">
-            <div class="logo wmata">M</div>
-            <div class="name">WMATA</div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/WMATA_Metro_logo.svg/512px-WMATA_Metro_logo.svg.png" alt="WMATA">
+            </div>
+            <div class="name">WMATA (Metro)</div>
             <div class="loc">Washington D.C.</div>
         </div>
+
+        <!-- Metro-North Railroad -->
         <div class="card">
-            <div class="logo mn">MTA MN</div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/MTA_Metro-North_Railroad_logo.svg/512px-MTA_Metro-North_Railroad_logo.svg.png" alt="Metro-North">
+            </div>
             <div class="name">Metro-North Railroad</div>
             <div class="loc">Nueva York</div>
         </div>
